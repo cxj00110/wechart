@@ -1,0 +1,197 @@
+.region>.title {
+  margin-left: 20rpx;
+  font-size: 32rpx;
+}
+
+.region>.regionOpt {
+  float: right;
+  color: #aaa;
+  font-size: 28rpx;
+  margin-top: 8rpx;
+  margin-right: 20rpx;
+}
+
+.region>.regionOpt>.iconfont {
+  display: inline-block;
+  font-size: 28rpx;
+  margin-right: 12rpx;
+}
+.icon-reload{
+  transition:  all .5s;
+}
+swiper {
+  width: 100%;
+  height: 354rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.classifyCon {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.classItem {
+  width: 20%;
+  padding: 16rpx;
+  text-align: center;
+}
+
+.classItem>image {
+  width: 80%;
+}
+
+.classItem>text {
+  display: block;
+  font-size: 26rpx;
+}
+
+.noticeCon {
+  width: 100%;
+  height: 235rpx;
+}
+
+.noticeItem {
+  font-size: 24rpx;
+  margin: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.noticeItem>.redPoint {
+  font-size: 28rpx;
+  color: #e4393c;
+  margin-right: 16rpx;
+}
+
+.chinaCon {
+  width: 100%;
+}
+
+.chinaCon .regionOpt {
+  margin-right: 0;
+}
+
+.chinaCon .iconfont {
+  margin-right: 0;
+}
+
+.bookCon {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin-top: 26rpx;
+}
+
+.bookCon>.bookItem {
+  width: 25%;
+  text-align: center;
+}
+
+.bookCon image {
+  width: 82%;
+}
+
+.bookCon text {
+  display: block;
+  text-align: center;
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.letterCon {
+  width: 100%;
+}
+
+.letterCon .regionOpt {
+  margin-right: 0;
+}
+
+.letterCon .iconfont {
+  margin-right: 0;
+}
+
+.arrayCon {
+  width: 100%;
+  /* height: 600rpx; */
+  margin-top: 26rpx;
+}
+
+.arrayCon>view {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.b_book {
+  text-align: center;
+}
+.b_book>view{
+  width:calc(100% - 20rpx);
+  text-align: center;
+  margin-left: 20rpx;
+}
+.b_book image {
+  width: 100%;
+}
+.b_book text{
+  font-size: 26rpx;
+  display: block;
+  margin-bottom: 10rpx;
+}
+.s_book {
+  /* display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+}
+
+.s_book>view {
+  width: calc(50% - 30rpx);
+  float: left;
+  text-align: center;
+  margin-left: 20rpx;
+}
+.s_book image{
+  width: 100%;
+  margin-left: 0;
+}
+.s_book text{
+  font-size: 26rpx;
+  display: block;
+  margin-top:4rpx;
+  margin-bottom: 10rpx;
+}
+.newBook {
+  width: 100%;
+}
+
+.newBook>.scrollBox {
+  width: 100%;
+  margin-top: 26rpx;
+}
+
+.scrollBox>scroll-view {
+  display: flex;
+  white-space: nowrap;
+}
+
+.scrollBox image {
+  width: 300rpx;
+  margin-right: 20rpx;
+}
+
+.scrollBox image:first-child {
+  margin-left: 20rpx;
+}

@@ -1,0 +1,41 @@
+<view class='container'>
+  <!-- 背景 -->
+  <image src='{{musicList[currentIndex].url}}' class='bg'></image>
+  <!-- 头像 -->
+  <image src='{{musicList[currentIndex].url}}' class='head {{rotateImg?"rotateImg":""}}'></image>
+  <!-- 列表按钮 -->
+  <button class='listBtn' bindtap='openList'>列表</button>
+  <!-- 标题 -->
+  <text class='name'>—— {{musicList[currentIndex].name+'-'+musicList[currentIndex].person}} ——</text>
+  <!-- 进度条 -->
+  <view class='processCon'>
+    <text class='leftTime time'>{{currentTime}}</text>
+    <view class='cache' style="width:{{cache}}"></view>
+    <view class='process' style="width:{{process}}"></view>
+    <view class='point' style="left:{{process}}" bindtouchmove="move"></view>
+    <text class='rightTime time'>{{totalTime}}</text>
+  </view>
+  <!-- 控制按钮 -->
+  <view class='ctrl'>
+    <view class='iconfont icon-shangyishou {{currentIndex>0?"":"disabled"}}' bindtap='playPrev'></view>
+    <view class='iconfont {{playOrPause==0?"icon-play":"icon-stop"}} ' bindtap="playOrPause"></view>
+    <view class='iconfont icon-xiayishou  {{currentIndex<musicList.length-1?"":"disabled"}}' bindtap='playNext'></view>
+  </view>
+  <!-- 模态框 -->
+  <view class='modal {{showList==1?"show":""}}' bindtap='closeList'></view>
+  <!-- 列表 -->
+  <view class="listCon {{showList==1?'topShow':''}}">
+    <view class="topBanner">
+      播放列表 （ {{musicList.length}} ）
+    </view>
+    <view class='list'>
+      <scroll-view scroll-y='true'>
+        <view class='item {{currentIndex==index?"current_act":""}}' wx:for="{{musicList}}" wx:key="{{index}}" data-key="{{index}}" bindtap='playCurrent'>{{item.name}} -
+          <text style='color:#aaa;font-size:24rpx'>{{item.person}}</text>
+        </view>
+        <view class='bottomText'>到底了</view>
+      </scroll-view>
+    </view>
+    <view class="close" bindtap='closeList'>关 闭</view>
+  </view>
+</view>

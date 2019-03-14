@@ -1,0 +1,138 @@
+/* pages/classify/classify.wxss */
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.detailCon {
+  width: 100%;
+  height: 310rpx;
+  padding: 40rpx;
+}
+
+.detailCon>view {
+  float: left;
+}
+
+.d_book {
+  width: 260rpx;
+  height: 100%;
+}
+
+.d_book>image {
+  width: 220rpx;
+  height: 100%;
+  float: right;
+}
+
+.d_info {
+  width: calc(100% - 330rpx);
+  margin-left: 40rpx;
+  height: 100%;
+}
+
+.d_info>text {
+  display: block;
+  font-size: 28rpx;
+}
+
+.d_info>.name {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.d_info>.info {
+  color: #666;
+  line-height: 60rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.toolbar>view {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.toolbar .iconfont {
+  font-size: 50rpx;
+  color: #e4393c;
+}
+
+.toolbar text {
+  font-size: 28rpx;
+}
+
+.tabCon {
+  height: calc(100% - 382rpx);
+  margin-bottom: 0;
+  position: relative;
+}
+
+.tab {
+  width: 50%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 32rpx;
+  float: left;
+}
+
+.tab_act {
+  color: #e4393c;
+}
+
+.tabRegion {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 70rpx;
+  bottom: 0;
+}
+
+.tabRegion>scroll-view {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  display: block;
+}
+
+.tabRegion text {
+  font-size: 28rpx;
+  color: #555;
+  display: block;
+  width: calc(100% - 80rpx);
+  margin: 0 auto;
+  line-height: 50rpx;
+}
+
+.item {
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 40rpx;
+}
+
+.tabRegion .item>text {
+  font-size: 28rpx;
+  float: left;
+  width: calc(100% - 80rpx);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tabRegion .item>.iconfont {
+  font-size: 40rpx;
+  color: #e4393c;
+  float: right;
+  width: 80rpx;
+}

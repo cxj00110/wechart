@@ -1,0 +1,22 @@
+<view class="container">
+  <view class='leftCon'>
+    <view class='whiteBg'>
+      <view class='{{menuIndex==index?"item act":"item"}}' wx:for="{{menuData}}" wx:key="{{index}}" data-key="{{index}}" bindtap="tabChange">
+        <view class='bg'></view>
+        <text>{{item}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='rightCon'>
+    <view class='nothing' wx:if="{{books[menuIndex].length==0}}">
+      <image src='../../images/none.jpg' mode="widthFix"></image>
+      <text>啊哦~暂时没有数据...</text>
+    </view>
+    <scroll-view scroll-y="true" wx:else>
+      <view class='imgItem' wx:for="{{books[menuIndex]}}" wx:key="{{index}}" bindtap='toDetail'>
+        <image src='{{item.src}}' mode="widthFix"></image>
+        <text>{{item.text+(index+1)}}</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

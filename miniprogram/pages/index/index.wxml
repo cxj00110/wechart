@@ -1,0 +1,137 @@
+<view class="container">
+  <!-- 轮播图 -->
+  <swiper indicator-dots="true" autoplay="true" interval="2000">
+    <block>
+      <swiper-item>
+        <image src="../../images/1.jpg" class="slide-image" width="100%" />
+      </swiper-item>
+    </block>
+    <block>
+      <swiper-item>
+        <image src="../../images/1.jpg" class="slide-image" width="100%" />
+      </swiper-item>
+    </block>
+    <block>
+      <swiper-item>
+        <image src="../../images/1.jpg" class="slide-image" width="100%" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 分类导航 -->
+  <view class='classifyCon region'>
+    <view class='classItem'>
+      <image src='../../images/s1.png' mode="widthFix" />
+      <text>国学经典</text>
+    </view>
+    <view class='classItem'>
+      <image src='../../images/s2.png' mode="widthFix" />
+      <text>少儿童书</text>
+    </view>
+    <view class='classItem'>
+      <image src='../../images/s3.png' mode="widthFix" />
+      <text>名著阅读</text>
+    </view>
+    <view class='classItem'>
+      <image src='../../images/s4.png' mode="widthFix" />
+      <text>文学殿堂</text>
+    </view>
+    <view class='classItem'>
+      <image src='../../images/s5.png' mode="widthFix" />
+      <text>更多分类</text>
+    </view>
+  </view>
+  <!-- 通知公告 -->
+  <view class='noticeCon region'>
+    <text class='title'>通知公告</text>
+    <view class='regionOpt' bindtap='update'>
+      <view class='iconfont icon-reload' style='transform:rotate({{rotate}}deg)'></view>
+      <text>换一批</text>
+    </view>
+    <view class='noticeItem'>
+      <text class='redPoint'>·</text>
+      <text>中国书刊发行业协会2018年年会在重庆召开</text>
+    </view>
+    <view class='noticeItem'>
+      <text class='redPoint'>·</text>
+      <text>中国书刊发行业协会2018年年会在重庆召开</text>
+    </view>
+    <view class='noticeItem'>
+      <text class='redPoint'>·</text>
+      <text>中国书刊发行业协会2018年年会在重庆召开</text>
+    </view>
+  </view>
+  <!-- 国学经典 -->
+  <view class='chinaCon region'>
+    <text class='title'>国学经典</text>
+    <view class='regionOpt'>
+      <text>更多</text>
+      <view class='iconfont icon-xiangyou'></view>
+    </view>
+    <view class='bookCon'>
+      <view class='bookItem'>
+        <image src='../../images/book.jpg' mode="widthFix" bindtap='toDetail'></image>
+        <text>语文书</text>
+      </view>
+      <view class='bookItem'>
+        <image src='../../images/book.jpg' mode="widthFix" bindtap='toDetail'></image>
+        <text>语文书</text>
+      </view>
+      <view class='bookItem'>
+        <image src='../../images/book.jpg' mode="widthFix" bindtap='toDetail'></image>
+        <text>语文书</text>
+      </view>
+      <view class='bookItem'>
+        <image src='../../images/book.jpg' mode="widthFix" bindtap='toDetail'></image>
+        <text>语文书</text>
+      </view>
+    </view>
+  </view>
+  <!-- 文学殿堂 -->
+  <view class='letterCon region'>
+    <text class='title'>文学殿堂</text>
+    <view class='regionOpt'>
+      <text>更多</text>
+      <view class='iconfont icon-xiangyou'></view>
+    </view>
+    <view class='arrayCon'>
+      <view class='b_book'>
+        <view>
+          <image src='../../images/book.jpg' mode="widthFix" bindtap='toDetail'></image>
+          <text>语文书</text>
+        </view>
+      </view>
+      <view class='s_book'>
+        <view>
+          <image src='../../images/book.jpg' mode="widthFix" bindtap='toDetail'></image>
+          <text>语文书</text>
+        </view>
+        <view>
+          <image src='../../images/book.jpg' mode="widthFix" bindtap='toDetail'></image>
+          <text>语文书</text>
+        </view>
+        <view>
+          <image src='../../images/book.jpg' mode="widthFix" bindtap='toDetail'></image>
+          <text>语文书</text>
+        </view>
+        <view>
+          <image src='../../images/book.jpg' mode="widthFix" bindtap='toDetail'></image>
+          <text>语文书</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 新书抢先看 -->
+  <view class='newBook region'>
+    <text class='title'>新书抢先看</text>
+    <view class='scrollBox'>
+      <scroll-view scroll-x="true">
+        <image src='../../images/scroll.jpg' mode="widthFix"></image>
+        <image src='../../images/scroll.jpg' mode="widthFix"></image>
+        <image src='../../images/scroll.jpg' mode="widthFix"></image>
+        <image src='../../images/scroll.jpg' mode="widthFix"></image>
+        <image src='../../images/scroll.jpg' mode="widthFix"></image>
+        <image src='../../images/scroll.jpg' mode="widthFix"></image>
+      </scroll-view>
+    </view>
+  </view>
+</view>

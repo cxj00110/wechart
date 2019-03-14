@@ -1,0 +1,112 @@
+<view class="container">
+  <!-- 图书详情 -->
+  <view class='detailCon region'>
+    <view class='d_book'>
+      <image src='../../images/book.jpg'></image>
+    </view>
+    <view class='d_info'>
+      <text class='name'>语文书</text>
+      <text class='person info'>作者：陈大帅比</text>
+      <text class='room info'>出版社：雨花西路100号</text>
+      <text class='click_num info'>点击：200次</text>
+    </view>
+  </view>
+  <!-- 工具栏 -->
+  <view class='toolbar region'>
+    <view>
+      <view class='iconfont {{like==0?"icon-aixin2":"icon-aixin1"}}' bindtap='signLike'></view>
+      <text>喜欢</text>
+    </view>
+    <view>
+      <view class='iconfont {{collect==0?"icon-shoucang2":"icon-shoucang1"}}' bindtap='signCollect'></view>
+      <text>收藏</text>
+    </view>
+    <view>
+      <view class='iconfont icon-zhuanfa'></view>
+      <text>转发</text>
+    </view>
+    <view>
+      <view class='iconfont icon-kefu'></view>
+      <text>客服</text>
+    </view>
+  </view>
+  <!-- tab -->
+  <view class='tabCon region'>
+    <view class='tab {{tabAct==0?"tab_act":""}}' data-tab="0" bindtap='clickTab'>图书详情</view>
+    <view class='tab {{tabAct==1?"tab_act":""}}' data-tab="1" bindtap='clickTab'>图书目录</view>
+    <view class='tabRegion {{tabAct==0?"show":""}}'>
+      <scroll-view scroll-y="true">
+        <text>本书是由司马迁撰写的中国第一部纪传体通史，是二十四史的第一部，全书分12本纪，10表，8书，30世家，70列传，共130篇，五十二万余字，记载了我国从传说中的黄帝到汉武帝太初四年长达3000年左右的历史。本书是由司马迁撰写的中国第一部纪传体通史，是二十四史的第一部，全书分12本纪，10表，8书，30世家，70列传，共130篇，五十二万余字，记载了我国从传说中的黄帝到汉武帝太初四年长达3000年左右的历史。本书是由司马迁撰写的中国第一部纪传体通史，是二十四史的第一部，全书分12本纪，10表，8书，30世家，70列传，共130篇，五十二万余字，记载了我国从传说中的黄帝到汉武帝太初四年长达3000年左右的历史。本书是由司马迁撰写的中国第一部纪传体通史，是二十四史的第一部，全书分12本纪，10表，8书，30世家，70列传，共130篇，五十二万余字，记载了我国从传说中的黄帝到汉武帝太初四年长达3000年左右的历史。本书是由司马迁撰写的中国第一部纪传体通史，是二十四史的第一部，全书分12本纪，10表，8书，30世家，70列传，共130篇，五十二万余字，记载了我国从传说中的黄帝到汉武帝太初四年长达3000年左右的历史。本书是由司马迁撰写的中国第一部纪传体通史，是二十四史的第一部，全书分12本纪，10表，8书，30世家，70列传，共130篇，五十二万余字，记载了我国从传说中的黄帝到汉武帝太初四年长达3000年左右的历史。</text>
+      </scroll-view>
+    </view>
+    <view class='tabRegion {{tabAct==1?"show":""}}'>
+      <scroll-view scroll-y="true">
+        <view class='item' bindtap='linkTovideo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-shipin'></view>
+        </view>
+        <view class='item' bindtap='linkTovideo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-shipin'></view>
+        </view>
+        <view class='item' bindtap='linkTovideo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-shipin'></view>
+        </view>
+        <view class='item' bindtap='linkTovideo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-shipin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+        <view class='item' bindtap='linkTo'>
+          <text>南岳列传第五十六</text>
+          <view class='iconfont icon-yinpin'></view>
+        </view>
+      </scroll-view>
+
+    </view>
+  </view>
+</view>

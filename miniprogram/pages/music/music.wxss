@@ -1,0 +1,256 @@
+/**index.wxss**/
+
+page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container>.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(40px);
+}
+
+.container>.head {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 120rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 10rpx #eee;
+}
+.rotateImg{
+  animation: rotateImg 50s infinite linear;
+}
+@keyframes rotateImg{
+    /* 0% {transform:translateX(-50%) rotate(0)}
+    25% {transform:translateX(-50%) rotate(90deg)}
+    50% {transform:translateX(-50%) rotate(180deg)}
+    75% {transform:translateX(-50%) rotate(270deg)}
+    100% {transform:translateX(-50%) rotate(360deg)} */
+    from{transform:translateX(-50%) rotate(0)}
+    to{transform:translateX(-50%) rotate(360deg)}
+}
+.listBtn {
+  background: transparent;
+  width: 60px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 24px;
+  font-size: 14px;
+  /* margin-top: 650rpx; */
+  margin-top: 82%;
+}
+
+.name {
+  position: absolute;
+  /* top: 780rpx; */
+  top:64%;
+  font-size: 38rpx;
+  color: #fff;
+}
+
+.ctrl {
+  position: absolute;
+  bottom: 40rpx;
+  height: 180rpx;
+  line-height: 180rpx;
+  left: 0;
+  right: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.ctrl>view {
+  font-size: 100rpx;
+  color: #fff;
+}
+
+.ctrl .icon-play, .ctrl .icon-stop {
+  color: #e4393c;
+  font-size: 120rpx;
+}
+
+.processCon {
+  width: 60%;
+  height: 5rpx;
+  background: #aaa;
+  position: absolute;
+  /* bottom: 300rpx; */
+  bottom: 20%;
+}
+
+.cache {
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.process {
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #e4393c;
+}
+
+.point {
+  width: 50rpx;
+  height: 50rpx;
+  /* background: #e4393c; */
+  border-radius: 50%;
+  /* transition: left 0.1s; */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.point::before {
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e4393c;
+}
+
+#myAudio {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 9;
+  display: none;
+}
+
+.listCon {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  height: 50%;
+  left: 0;
+  bottom: -50%;
+  right: 0;
+  transition: bottom 0.2s;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.topShow {
+  bottom: 0rpx;
+}
+
+.topBanner {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 32rpx;
+  color: #444;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  padding-left: 24rpx;
+}
+.list{
+  position: absolute;
+  top:40px;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+.close {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #e02e2e;
+  background: #fff;
+}
+
+.show {
+  display: block;
+}
+
+.ctrl .disabled {
+  opacity: 0.2;
+}
+.list>scroll-view{
+  width: 100%;
+  height: 100%;
+}
+.list .item{
+  border-bottom: 1rpx solid #eee;
+  padding:20rpx 0 20rpx 28rpx;
+  font-size: 32rpx;
+}
+.current_act{
+  color: #e4393c;
+}
+.current_act>text{
+  color: #e4393c!important
+}
+.bottomText{
+  text-align: center;
+  font-size: 30rpx;
+  color: #ddd;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.time{
+  color: #fff;
+  margin-top: -2rpx;
+}
+.leftTime{
+  /* float: left; */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateX(-120%);
+}
+.rightTime{
+  /* float: right; */
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(120%);
+}

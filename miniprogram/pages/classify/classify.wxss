@@ -1,0 +1,85 @@
+.container{
+  height: 100%;
+  position: relative;
+}
+.leftCon{
+  width: 200rpx;
+  position: absolute;
+  left: 0;
+  top:0;
+  bottom: 0;
+  background: #e4393c;
+}
+.rightCon{
+  width: calc(100% - 200rpx);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top:0;
+  bottom: 0;
+  background: #fff;
+}
+.item{
+  height: 80rpx;
+  border-bottom: 1rpx solid #fff;
+  position: relative;
+}
+.item>text{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: #fff;
+  font-size: 24rpx;
+}
+.whiteBg{
+  background: #fff;
+}
+.bg{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background: #e4393c;
+  transition: all .5s;
+}
+.item.act text{
+  color: #e4393c;
+}
+.item.act .bg{
+  width: 6rpx;
+}
+.imgItem{
+  width: calc((100% - 80rpx) / 3);
+  text-align: center;
+  float: left;
+  margin: 20rpx 0 0 20rpx;
+}
+.imgItem image{
+  width: 100%;
+  float: left;
+}
+.imgItem>text{
+  font-size:24rpx;
+}
+.rightCon>scroll-view{
+  height: 100%;
+  width: 100%;
+}
+.nothing{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.nothing>image{
+  width:280rpx;
+  display: block;
+  margin: 0 auto;
+}
+.nothing>text{
+  color: #ddd;
+  font-size: 28rpx;
+}

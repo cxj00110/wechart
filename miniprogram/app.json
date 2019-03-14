@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/music/music",
+    "pages/person/person",
+    "pages/detail/detail",
+    "pages/video/video"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "陈大帅比的小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "requiredBackgroundModes":["audio","backgroundAudioManager"],
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#e4393c",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"images/nav/home.png",
+        "selectedIconPath":"images/nav/home_act.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "images/nav/class.png",
+        "selectedIconPath": "images/nav/class_act.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "images/nav/music.png",
+        "selectedIconPath": "images/nav/music_act.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人",
+        "iconPath": "images/nav/person.png",
+        "selectedIconPath": "images/nav/person_act.png"
+      }
+      
+    ]
+  }
+}
